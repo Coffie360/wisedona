@@ -1,1 +1,9 @@
 Hello world
+
+function levels(group){
+array=["A"];
+   var dl = array.lenght*group +1;
+   var dl1 = dl + 1;
+   console.log(dl,dl1);
+   }
+   levels(1);
