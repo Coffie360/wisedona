@@ -7,3 +7,10 @@ array=["A"];
    console.log(dl,dl1);
    }
    levels(1);
+   
+const Parallelism = 2; 
+const asyncBatch = require('async-batch').default;
+const arr = [1, 2, 3];
+const asyncMethod = async (val) => { console.log(`Value: ${val}`); };
+
+await asyncBatch(arr, asyncMethod, Parallelism);
